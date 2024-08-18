@@ -1,0 +1,15 @@
+[Unit]
+Description=Simple PSB Broker Service
+After=network.target
+
+[Service]
+ExecStart=/sbin/simple-psb-broker --verbose
+Restart=on-failure
+User=nobody
+Group=nogroup
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=simple-psb-broker
+
+[Install]
+WantedBy=multi-user.target

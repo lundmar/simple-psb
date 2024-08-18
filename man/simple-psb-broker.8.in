@@ -1,0 +1,33 @@
+.TH BROKER-SERVICE 8 "@man_date@" "Broker Service @version@" "System Manager's Manual"
+.SH NAME
+broker-service \- A service that acts as a message broker for PUB-SUB patterns.
+.SH SYNOPSIS
+.B broker-service
+[\fB--verbose\fR] [\fB--help\fR] [\fB--version\fR]
+.SH DESCRIPTION
+The \fBbroker-service\fR is a command-line tool that starts a message broker, which facilitates communication between publishers and subscribers using the ZeroMQ library.
+
+.SH OPTIONS
+.TP
+\fB--verbose\fR
+Enable verbose output, providing more detailed logs about the broker's operation.
+.TP
+\fB--help\fR
+Display help information about the \fBbroker-service\fR command.
+.TP
+\fB--version\fR
+Display the version of the \fBbroker-service\fR.
+
+.SH EXAMPLES
+.TP
+Start the broker service with verbose output:
+.nf
+\fBbroker-service --verbose\fR
+.fi
+
+.SH SEE ALSO
+\fBzeromq\fR(7).
+
+.SH AUTHOR
+Written by Martin Lund
+
